@@ -5,6 +5,7 @@ defmodule ElixirGravatarUrl.Mixfile do
     [app: :elixir_gravatar_url,
      version: "1.0.0",
      elixir: "~> 1.2",
+     description: description,
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
      deps: deps]
@@ -17,6 +18,11 @@ defmodule ElixirGravatarUrl.Mixfile do
     [applications: [:logger]]
   end
 
+  defp description do
+    """
+    An Elixir module for generating Gravatar urls
+    """
+  end
   # Dependencies can be Hex packages:
   #
   #   {:mydep, "~> 0.3.0"}
